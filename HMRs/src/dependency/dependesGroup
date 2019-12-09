@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name= "suite">
+ <test name = "test1">
+   
+      <groups>
+         <run>
+            <include name = "login" />
+           
+         </run>
+      </groups>
+
+      <classes>
+         <class name = "dependency.GrpsRun" />
+      </classes>
+   </test>
+ </suite>

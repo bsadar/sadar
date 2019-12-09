@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test thread-count="2" name="Fire(failed)" parallel="tests">
+    <parameter name="browser" value="gg"/>
+    <classes>
+      <class name="cross.Cr">
+        <methods>
+          <include name="CrB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cross.Cr -->
+    </classes>
+  </test> <!-- Fire(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

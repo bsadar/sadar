@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="tests" >
+
+<test name="Chrome">
+<parameter name="browser" value="ff" />
+<classes>
+<class name="cross.Cr">
+</class>
+</classes>
+</test>
+
+<test name="Fire">
+<parameter name="browser" value="gg" />
+<classes>
+<class name="cross.Cr">
+</class>
+</classes>
+</test>
+
+
+
+</suite>
