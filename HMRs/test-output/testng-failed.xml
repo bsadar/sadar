@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
-  <test thread-count="5" name="Test1(failed)" parallel="tests">
-    <parameter name="browser" value="ff"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cross.Cr">
+      <class name="testng.FrameworkRegressionTest">
         <methods>
-          <include name="CrB" invocation-numbers="0"/>
+          <include name="TC3"/>
+          <include name="TC4"/>
+          <include name="TC2_1"/>
         </methods>
-      </class> <!-- cross.Cr -->
+      </class> <!-- testng.FrameworkRegressionTest -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

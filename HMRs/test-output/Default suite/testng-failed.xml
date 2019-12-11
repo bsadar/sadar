@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="hmrProjectFramework.FWTest">
+      <class name="testng.FrameworkRegressionTest">
         <methods>
-          <include name="TC_0004"/>
-          <include name="be"/>
-          <include name="TC_0002_1"/>
-          <include name="bclose"/>
+          <include name="TC3"/>
+          <include name="TC4"/>
+          <include name="TC2_1"/>
         </methods>
-      </class> <!-- hmrProjectFramework.FWTest -->
+      </class> <!-- testng.FrameworkRegressionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
