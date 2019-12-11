@@ -36,7 +36,7 @@ public class Orangehrm {
 		Driver.findElement(By.name("txtEmpNickName")).sendKeys("sagar");
 		Driver.findElement(By.id("btnEdit")).click();
 		Driver.findElement(By.xpath("//input[@class='resetbutton']")).click();
-		
+		Thread.sleep(6000);
 		//leaves
 		Driver.switchTo().parentFrame();
 		Thread.sleep(3000);	
