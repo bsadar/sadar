@@ -13,8 +13,8 @@ public class Uplad {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "D:\\SelWD\\Drvers\\chromedriver.exe");
-		 WebDriver bo=new ChromeDriver();  
+		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
+		 WebDriver bo=new FirefoxDriver();  
 	     bo.manage().window().maximize();
 	     
 		//bo.get( "file:///C:/Users/qaplanet/Desktop/upp.html");
@@ -33,6 +33,9 @@ public class Uplad {
 	Thread.sleep(3000);
 		Runtime.getRuntime().exec("C:\\Users\\qaplanet\\Desktop\\Ait\\uplfile.exe");
 		Thread.sleep(3000);
+		/*ControlFocus ( "Open", "", "Edit1")
+		ControlSetText ("Open", "", "Edit1","C:\Users\qaplanet\Desktop\keyword.docx")
+		ControlClick ( "Open", "", "Button1"  )*/
 	}
 
 }

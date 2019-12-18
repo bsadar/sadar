@@ -18,12 +18,14 @@ public class ExcelRead {
 		XSSFWorkbook wb=new XSSFWorkbook(file); 
 		XSSFSheet sh = wb.getSheet("Sheet2");
 		
-        XSSFRow rw=sh.getRow(4); 
-        
-		XSSFCell cel=rw.getCell(6); 
+   
+    	  XSSFRow rw=sh.getRow(5); 
+		XSSFCell cel=rw.getCell(5); 
+		
 		
 		      
 		System.out.println(cel);
+     
   
 	}
 

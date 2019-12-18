@@ -1,95 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76191" started-at="2019-12-12T03:59:14Z" finished-at="2019-12-12T04:00:30Z">
+  <suite name="Default suite" duration-ms="38018" started-at="2019-12-13T13:14:56Z" finished-at="2019-12-13T13:15:34Z">
     <groups>
-      <group name="admin">
-        <method signature="FrameworkRegressionTestFinal.TC3()[pri:5, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC3" class="testng.FrameworkRegressionTestFinal"/>
-        <method signature="FrameworkRegressionTestFinal.TC4()[pri:6, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC4" class="testng.FrameworkRegressionTestFinal"/>
-      </group> <!-- admin -->
-      <group name="Login">
-        <method signature="FrameworkRegressionTestFinal.TC2_1()[pri:1, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_1" class="testng.FrameworkRegressionTestFinal"/>
-        <method signature="FrameworkRegressionTestFinal.TC2_2()[pri:2, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_2" class="testng.FrameworkRegressionTestFinal"/>
-        <method signature="FrameworkRegressionTestFinal.TC2_3()[pri:3, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_3" class="testng.FrameworkRegressionTestFinal"/>
-        <method signature="FrameworkRegressionTestFinal.TC2_4()[pri:4, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_4" class="testng.FrameworkRegressionTestFinal"/>
-      </group> <!-- Login -->
     </groups>
-    <test name="Default test" duration-ms="76191" started-at="2019-12-12T03:59:14Z" finished-at="2019-12-12T04:00:30Z">
-      <class name="testng.FrameworkRegressionTestFinal">
-        <test-method status="PASS" signature="buildExecution()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildExecution" is-config="true" duration-ms="13847" started-at="2019-12-12T03:59:14Z" finished-at="2019-12-12T03:59:28Z">
+    <test name="Default test" duration-ms="38018" started-at="2019-12-13T13:14:56Z" finished-at="2019-12-13T13:15:34Z">
+      <class name="datadriven.Datadrv">
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="11369" started-at="2019-12-13T13:14:56Z" data-provider="LoginCredentials" finished-at="2019-12-13T13:15:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buildExecution -->
-        <test-method status="PASS" signature="TC2_1()[pri:1, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_1" duration-ms="1689" started-at="2019-12-12T03:59:28Z" finished-at="2019-12-12T03:59:30Z">
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="8867" started-at="2019-12-13T13:15:08Z" data-provider="LoginCredentials" finished-at="2019-12-13T13:15:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC2_1 -->
-        <test-method status="PASS" signature="buildClose()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildClose" is-config="true" duration-ms="1739" started-at="2019-12-12T03:59:30Z" finished-at="2019-12-12T03:59:32Z">
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="8776" started-at="2019-12-13T13:15:17Z" data-provider="LoginCredentials" finished-at="2019-12-13T13:15:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buildClose -->
-        <test-method status="PASS" signature="buildExecution()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildExecution" is-config="true" duration-ms="7418" started-at="2019-12-12T03:59:32Z" finished-at="2019-12-12T03:59:39Z">
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="8975" started-at="2019-12-13T13:15:25Z" data-provider="LoginCredentials" finished-at="2019-12-13T13:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buildExecution -->
-        <test-method status="PASS" signature="TC2_2()[pri:2, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_2" duration-ms="7101" started-at="2019-12-12T03:59:39Z" finished-at="2019-12-12T03:59:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC2_2 -->
-        <test-method status="PASS" signature="buildClose()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildClose" is-config="true" duration-ms="1627" started-at="2019-12-12T03:59:46Z" finished-at="2019-12-12T03:59:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildClose -->
-        <test-method status="PASS" signature="buildExecution()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildExecution" is-config="true" duration-ms="8004" started-at="2019-12-12T03:59:48Z" finished-at="2019-12-12T03:59:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildExecution -->
-        <test-method status="PASS" signature="TC2_3()[pri:3, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_3" duration-ms="1230" started-at="2019-12-12T03:59:56Z" finished-at="2019-12-12T03:59:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC2_3 -->
-        <test-method status="PASS" signature="buildClose()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildClose" is-config="true" duration-ms="1541" started-at="2019-12-12T03:59:57Z" finished-at="2019-12-12T03:59:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildClose -->
-        <test-method status="PASS" signature="buildExecution()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildExecution" is-config="true" duration-ms="5961" started-at="2019-12-12T03:59:59Z" finished-at="2019-12-12T04:00:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildExecution -->
-        <test-method status="PASS" signature="TC2_4()[pri:4, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC2_4" duration-ms="180" started-at="2019-12-12T04:00:04Z" finished-at="2019-12-12T04:00:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC2_4 -->
-        <test-method status="PASS" signature="buildClose()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildClose" is-config="true" duration-ms="1739" started-at="2019-12-12T04:00:05Z" finished-at="2019-12-12T04:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildClose -->
-        <test-method status="PASS" signature="buildExecution()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildExecution" is-config="true" duration-ms="6640" started-at="2019-12-12T04:00:06Z" finished-at="2019-12-12T04:00:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildExecution -->
-        <test-method status="PASS" signature="TC3()[pri:5, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC3" duration-ms="6354" started-at="2019-12-12T04:00:13Z" depends-on-methods="testng.FrameworkRegressionTestFinal.TC2_1" finished-at="2019-12-12T04:00:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC3 -->
-        <test-method status="PASS" signature="buildClose()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildClose" is-config="true" duration-ms="1707" started-at="2019-12-12T04:00:19Z" finished-at="2019-12-12T04:00:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildClose -->
-        <test-method status="PASS" signature="buildExecution()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildExecution" is-config="true" duration-ms="5510" started-at="2019-12-12T04:00:21Z" finished-at="2019-12-12T04:00:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildExecution -->
-        <test-method status="PASS" signature="TC4()[pri:6, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="TC4" duration-ms="2197" started-at="2019-12-12T04:00:27Z" depends-on-methods="testng.FrameworkRegressionTestFinal.TC2_1" finished-at="2019-12-12T04:00:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC4 -->
-        <test-method status="PASS" signature="buildClose()[pri:0, instance:testng.FrameworkRegressionTestFinal@66a3ffec]" name="buildClose" is-config="true" duration-ms="1600" started-at="2019-12-12T04:00:29Z" finished-at="2019-12-12T04:00:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buildClose -->
-      </class> <!-- testng.FrameworkRegressionTestFinal -->
+        </test-method> <!-- TC1 -->
+      </class> <!-- datadriven.Datadrv -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
