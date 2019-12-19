@@ -10,12 +10,13 @@ public class Loginpm {
   
    //shareef 23/7/2017
    By uname=By.xpath("//td[2]/input");
+  
    
    void ue_txt(String ss){
 	   bo.findElement(uname).sendKeys(ss);
 	
    }
-   
+  
    
    Loginpm(WebDriver bro){
 	 this.bo=bro;
