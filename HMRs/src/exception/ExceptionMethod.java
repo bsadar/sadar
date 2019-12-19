@@ -4,7 +4,7 @@ public class ExceptionMethod {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+//this is update by sadar
 		try {
 			add();
 		} catch (Exception e) {
