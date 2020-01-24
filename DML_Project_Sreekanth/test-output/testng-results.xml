@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38827" started-at="2019-12-02T06:00:16Z" finished-at="2019-12-02T06:00:55Z">
+  <suite name="Default suite" duration-ms="33199" started-at="2020-01-11T05:28:43Z" finished-at="2020-01-11T05:29:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38827" started-at="2019-12-02T06:00:16Z" finished-at="2019-12-02T06:00:55Z">
+    <test name="Default test" duration-ms="33199" started-at="2020-01-11T05:28:43Z" finished-at="2020-01-11T05:29:16Z">
       <class name="testBase.ExecuteTests">
-        <test-method status="FAIL" signature="login()[pri:0, instance:testBase.ExecuteTests@42eca56e]" name="login" duration-ms="38780" started-at="2019-12-02T06:00:16Z" finished-at="2019-12-02T06:00:55Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:testBase.ExecuteTests@42eca56e]" name="login" duration-ms="33153" started-at="2020-01-11T05:28:43Z" finished-at="2020-01-11T05:29:16Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

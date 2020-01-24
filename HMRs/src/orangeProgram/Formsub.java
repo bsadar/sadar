@@ -106,11 +106,11 @@ public class Formsub {
 						rt.keyRelease(KeyEvent.VK_CONTROL);
 						rt.delay(1000);
 						//----------------------------
-						/*rt.keyPress(KeyEvent.VK_TAB);
+						rt.keyPress(KeyEvent.VK_TAB);
 						rt.keyRelease(KeyEvent.VK_TAB);
 						rt.delay(1000);
 						rt.keyPress(KeyEvent.VK_TAB);
-						rt.keyRelease(KeyEvent.VK_TAB);*/
+						rt.keyRelease(KeyEvent.VK_TAB);
 						//-------------------------------------
 						rt.delay(1000);
 						rt.keyPress(KeyEvent.VK_ENTER);
@@ -175,10 +175,10 @@ public class Formsub {
 				{
 					System.out.println("Employee Information Displayed");
 				} 
-			/*	WebElement Eid=Driver.findElement(By.xpath("//input[@value='1556']"));
+				WebElement Eid=Driver.findElement(By.xpath("//input[@value='1556']"));
 				Eid.click();
 				WebElement Eid2=Driver.findElement(By.xpath("//input[@value='1558']"));
-				Eid.click();*/
+				Eid.click();
 				WebElement Eid3=Driver.findElement(By.xpath("//input[@value='1672']"));
 				Eid3.click();
 				WebElement Delete=Driver.findElement(By.xpath("//input[@onclick='returnDelete();']"));
@@ -189,7 +189,7 @@ public class Formsub {
 				
 				//-------------------------------------------
 				//Mouse ove ron PIM
-				/*Act.moveToElement(objPIM).perform();
+				Act.moveToElement(objPIM).perform();
 				//Click on Employee List
 			    Driver.findElement(By.linkText("Employee List")).click();
 				//wait 2 sec
@@ -204,10 +204,10 @@ public class Formsub {
 				else
 				{
 					System.out.println("Failed to display Employee Information");
-				}	*/
+				}	
 				//-------------------------------------------
 				//Get row count
-				/*int rc=Driver.findElements(By.xpath("//table[@class='data-table']/tbody/tr")).size();
+				int rc=Driver.findElements(By.xpath("//table[@class='data-table']/tbody/tr")).size();
 				int i;
 				for(i=1;i<=rc;i++)
 				{
@@ -242,7 +242,7 @@ public class Formsub {
 				//Close browser
 				Driver.close();
 				//Quit object
-				Driver.quit();*/
+				Driver.quit();
 				WebElement Logout=Driver.findElement(By.xpath("//a[contains(text(),'Logout')]"));
 				Logout.click();
 				

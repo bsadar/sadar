@@ -27,6 +27,7 @@ public class Example {
 		sc.type(pd,"lab1");
         Thread.sleep(3000);
 	     sc.click(log);
+	   
 	
 		
 	}

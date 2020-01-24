@@ -17,8 +17,8 @@ public class SingleWin {
 		bo.findElement(By.id("win1")).click();
 		
 		///html[1]/body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]
-		//String wn=bo.getWindowHandle();
-		//System.out.println(wn);
+		String wn=bo.getWindowHandle();
+		System.out.println(wn);
 		
 		//bo.switchTo().window(wn);
 		//bo.findElement(By.xpath("/html[1]/body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]")).click();	

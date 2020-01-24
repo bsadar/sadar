@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Login {
 
           WebDriver bo;
-		  String   bpath ="http://apps.qaplanet.in/qahrm/login.php";
+		  String   bpath;
 		
 		void tc2_1(){
 			System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
@@ -16,10 +16,10 @@ public class Login {
 		     
 		      }
 
-		void tc2_2(){
-			
-		     
-		      }
+
+		Login(String bp){
+			this.bpath=bp;
+		}
        
 }
 

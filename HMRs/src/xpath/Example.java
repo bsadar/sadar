@@ -18,8 +18,8 @@ public class Example {
 		//dd.findElement(By.name("txtUserName")).sendKeys("sasdar");
 		  Thread.sleep(3000);
 		  
-		 // bo.findElement(By.xpath("//input[starts-with(@name,'txtUser')]")).sendKeys("sadar");
-		  bo.findElement(By.xpath("//input[contains(@name,'txtUserName')]")).sendKeys("sadar");
+		 bo.findElement(By.xpath("//input[starts-with(@name,'txtUser')]")).sendKeys("sadar");
+		  //bo.findElement(By.xpath("//input[contains(@name,'txtUserName')]")).sendKeys("sadar");
 		 // bo.findElement(By.xpath("//*[text()='txtUserName']")).sendKeys("sadar");
 		  Thread.sleep(6000);
 		 // bo.close();

@@ -7,8 +7,9 @@ public class Fwork {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    Login lg=new Login();
-          lg.tc21();
+		String bp="http://apps.qaplanet.in/qahrm/login.php";
+    Login lg=new Login(bp);
+          lg.tc2_1();
 		
 		
 		

@@ -21,7 +21,7 @@ public class Sshot {
 		
 		File SrcFile=((TakesScreenshot)bo).getScreenshotAs(OutputType.FILE);
 		
-	    FileUtils.copyFile(SrcFile, new File("D:\\Testsadar.png"));
+	    FileUtils.copyFile(SrcFile, new File("D:\\Test1sadar.png"));
 	
 
 	}

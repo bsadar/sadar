@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40514" started-at="2019-12-18T12:54:44Z" finished-at="2019-12-18T12:55:24Z">
+  <suite name="Default suite" duration-ms="9226" started-at="2020-01-10T07:50:57Z" finished-at="2020-01-10T07:51:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40514" started-at="2019-12-18T12:54:44Z" finished-at="2019-12-18T12:55:24Z">
+    <test name="Default test" duration-ms="9226" started-at="2020-01-10T07:50:57Z" finished-at="2020-01-10T07:51:06Z">
       <class name="sadarpom.Pomrun">
-        <test-method status="PASS" signature="tc222()[pri:0, instance:sadarpom.Pomrun@523884b2]" name="tc222" duration-ms="40473" started-at="2019-12-18T12:54:44Z" finished-at="2019-12-18T12:55:24Z">
+        <test-method status="PASS" signature="tc222()[pri:0, instance:sadarpom.Pomrun@523884b2]" name="tc222" duration-ms="9164" started-at="2020-01-10T07:50:57Z" finished-at="2020-01-10T07:51:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc222 -->
