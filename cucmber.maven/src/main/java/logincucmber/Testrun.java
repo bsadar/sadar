@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class) 
-@CucumberOptions(features="Feature",glue={"scripting"})
+@CucumberOptions(features="Feature")
 
 public class Testrun {
 

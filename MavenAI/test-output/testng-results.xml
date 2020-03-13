@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28144" started-at="2019-12-21T11:30:26Z" finished-at="2019-12-21T11:30:54Z">
+  <suite name="Suite" duration-ms="31521" started-at="2020-03-07T06:07:07Z" finished-at="2020-03-07T06:07:38Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="28144" started-at="2019-12-21T11:30:26Z" finished-at="2019-12-21T11:30:54Z">
+    <test name="Test" duration-ms="31521" started-at="2020-03-07T06:07:07Z" finished-at="2020-03-07T06:07:38Z">
       <class name="MaveanGI.MavenAI.Login_TC2Test">
-        <test-method status="PASS" signature="TC2()[pri:0, instance:MaveanGI.MavenAI.Login_TC2Test@59f99ea]" name="TC2" duration-ms="14655" started-at="2019-12-21T11:30:39Z" finished-at="2019-12-21T11:30:54Z">
+        <test-method status="PASS" signature="TC2()[pri:0, instance:MaveanGI.MavenAI.Login_TC2Test@59f99ea]" name="TC2" duration-ms="15052" started-at="2020-03-07T06:07:23Z" finished-at="2020-03-07T06:07:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC2 -->
       </class> <!-- MaveanGI.MavenAI.Login_TC2Test -->
       <class name="MaveanGI.MavenAI.LoginTest">
-        <test-method status="PASS" signature="TC21()[pri:0, instance:MaveanGI.MavenAI.LoginTest@26653222]" name="TC21" duration-ms="13445" started-at="2019-12-21T11:30:26Z" finished-at="2019-12-21T11:30:39Z">
+        <test-method status="PASS" signature="TC21()[pri:0, instance:MaveanGI.MavenAI.LoginTest@26653222]" name="TC21" duration-ms="16432" started-at="2020-03-07T06:07:07Z" finished-at="2020-03-07T06:07:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC21 -->
       </class> <!-- MaveanGI.MavenAI.LoginTest -->
       <class name="MaveanGI.MavenAI.SikuliTest">
-        <test-method status="PASS" signature="f()[pri:0, instance:MaveanGI.MavenAI.SikuliTest@ae45eb6]" name="f" duration-ms="2" started-at="2019-12-21T11:30:54Z" finished-at="2019-12-21T11:30:54Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:MaveanGI.MavenAI.SikuliTest@ae45eb6]" name="f" duration-ms="1" started-at="2020-03-07T06:07:38Z" finished-at="2020-03-07T06:07:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->

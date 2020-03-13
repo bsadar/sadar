@@ -16,7 +16,7 @@ public class Login {
 	public void enter_build_path() throws Throwable {
 		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
 		 bo=new FirefoxDriver();
-		bo.get("http://apps.qaplanet.in/qahrm/login.php");
+		bo.get("http://apps.qaplanet.in/hrm/login.php");
 	}
 
 	
@@ -28,12 +28,14 @@ public class Login {
         Thread.sleep(6000);
         bo.findElement(By.name("Submit")).click();
         Thread.sleep(6000);
+    	Assert.assertEquals(bo.getTitle(), "sadar");
 	 
 	}
 
 	
 	@Then("^home page disapleyd$")
 	public void home_page_disapleyd() throws Throwable {
+	
 		bo.close();
 	  
 	}

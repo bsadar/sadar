@@ -11,7 +11,7 @@ public class Login_TC2Test {
   public void TC2() throws InterruptedException {
 	  System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
 		WebDriver bo=new FirefoxDriver();
-		bo.get("http://apps.qaplanet.in/qahrm/login.php");
+		bo.get("http://apps.qaplanet.in/hrm/login.php");
 	  bo.findElement(By.xpath("//td[2]/input")).sendKeys("");
 	    bo.findElement(By.name("txtPassword")).sendKeys("");
 	    Thread.sleep(6000);
