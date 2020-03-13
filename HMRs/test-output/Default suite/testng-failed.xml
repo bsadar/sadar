@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.FrameworkRegressionTestFinal">
+      <class name="xml.Login">
         <methods>
-          <include name="buildExecution"/>
-          <include name="TC4"/>
-          <include name="TC3"/>
-          <include name="TC2_1"/>
-          <include name="buildClose"/>
+          <include name="testCaseTwo"/>
         </methods>
-      </class> <!-- testng.FrameworkRegressionTestFinal -->
+      </class> <!-- xml.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

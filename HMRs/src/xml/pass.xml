@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parameterization Test Suite">
 	<test name="Testing Parameterization">
-	<parameter name="browser" value="Firefox"/>
-	<parameter name="username" value="testuser"/>
-	<parameter name="password" value="testpassword"/>
+
+	<parameter name="username" value="qaplanet1"/>
+	<parameter name="password" value="lab1"/>
 		<classes>
-			<class name="com.parameterization.TestParameters" />
+			<class name="xml.Login" />
 		</classes>
 	</test>
 </suite>

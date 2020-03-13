@@ -19,6 +19,7 @@ public class Whandle {
         // Get current window handle
          String parentWinHandle = bo.getWindowHandle();
          System.out.println("Parent window handle: " + parentWinHandle);
+        // Thread.sleep(6000);
         // Locate 'Click to open a new browser window!' button using id
        WebElement newWindowBtn = bo.findElement(By.id("win1"));
         // Click the button to open a new window
@@ -33,8 +34,12 @@ public class Whandle {
             bo.switchTo().window(handle);
             System.out.println(handle);
             Thread.sleep(1000);
+            bo.get("https://www.redbus.in/");
+         
+            bo.findElement(By.xpath("//a[@id='redBus Bus Hire']")).click();
             System.out.println("Title of the new window: " + bo.getTitle());
             System.out.println("Closing the new window...");
+            Thread.sleep(3000);
             bo.close();
             }
         }
