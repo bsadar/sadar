@@ -12,6 +12,7 @@ public class Interfacepract {
           
           
           JN20   objdr=new JN20();
+          
       
           
           int1  obji2=new JN21();

@@ -6,10 +6,12 @@ public class Abs {
 		// TODO Auto-generated method stub
 
 		RBI obj=new SBI();
+		
 
           obj.ok();
-  obj.
+  
           SBI obj2=new SBI();
+          
 	
 	 RBI obj1=new ICICI();	     
 	}

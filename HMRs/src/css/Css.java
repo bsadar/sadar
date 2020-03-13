@@ -10,11 +10,12 @@ public class Css {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
 		WebDriver bo=new FirefoxDriver();
-		bo.get("http://apps.qaplanet.in/qahrm/login.php");
+		bo.get("http://apps.qaplanet.in/hrm/login.php");
 
-		bo.findElement(By.cssSelector("input[name=txtUserName]")).sendKeys("sadar");
-	//	bo.findElement(By.cssSelector("input[name=txtUserName]")).sendKeys("sADAR");
-	//	bo.findElement(By.name("txtPassword")).sendKeys("lab1");
+		//bo.findElement(By.cssSelector("input[name=txtUserName]")).sendKeys("sadar");
+	 //bo.findElement(By.cssSelector("input[name=txtUserName]")).sendKeys("sADAR");
+	bo.findElement(By.name("txtPassword")).sendKeys("lab1");
+	bo.findElement(By.cssSelector("input[name=txtUserName]")).sendKeys("sadar");
 	}
 
 }

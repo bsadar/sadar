@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class FrameworkRegressionTestFinal {
 	WebDriver bo;
-	String buildpath="http://apps.qaplanet.in/qahrm/login.php";
+	String buildpath="http://apps.qaplanet.in/hrm/login.php";
 	   @Test(enabled=true,priority=1,groups="Login") 
 	 //valid&valid
 	  public void TC2_1() {
@@ -18,7 +18,7 @@ public class FrameworkRegressionTestFinal {
 			bo.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
 	         bo.findElement(By.name("txtPassword")).sendKeys("lab1");
 	        bo.findElement(By.name("Submit")).click();
-	         Assert.assertEquals(bo.getTitle(), "OrangeHRM");
+	         Assert.assertEquals(bo.getTitle(), "OrangeHRMs");
 	       
 	  }
 	   @Test(enabled=true,priority=2,groups="Login") 
@@ -79,6 +79,7 @@ public class FrameworkRegressionTestFinal {
 	                     }
 	  
 	  @BeforeMethod
+	  
 	  void buildExecution(){
 		  System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
 		     bo=new FirefoxDriver();

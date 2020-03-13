@@ -15,7 +15,8 @@ public class FileUpload {
 	     bo.manage().window().maximize();
 	     
 		bo.get( "file:///C:/Users/qaplanet/Desktop/upp.html");
-		bo.findElement(By.id("photofile")).click();
+	
+		bo.findElement(By.id("input")).click();
 		Runtime.getRuntime().exec("C:\\Users\\qaplanet\\Desktop\\uplfilesasdarnew.exe");
 	}
 

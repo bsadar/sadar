@@ -17,11 +17,11 @@ public class Findelmnts {
 		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
 		WebDriver bo=new FirefoxDriver();
 		bo.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		bo.get("https://www.hdfcbank.com/");
+		bo.get("https://www.instagram.com/");
 		//bo.get("https://chandanachaitanya.github.io/selenium-practice-site/");
 		List<WebElement> nl=bo.findElements(By.tagName("a"));
 
-		System.out.print(nl.size());
+		System.out.println(nl.size());
          bo.close();
 		
 	}

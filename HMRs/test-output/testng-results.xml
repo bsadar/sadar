@@ -1,17 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9226" started-at="2020-01-10T07:50:57Z" finished-at="2020-01-10T07:51:06Z">
+  <suite name="Default suite" duration-ms="110049" started-at="2020-03-05T06:41:45Z" finished-at="2020-03-05T06:43:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9226" started-at="2020-01-10T07:50:57Z" finished-at="2020-01-10T07:51:06Z">
-      <class name="sadarpom.Pomrun">
-        <test-method status="PASS" signature="tc222()[pri:0, instance:sadarpom.Pomrun@523884b2]" name="tc222" duration-ms="9164" started-at="2020-01-10T07:50:57Z" finished-at="2020-01-10T07:51:06Z">
+    <test name="Default test" duration-ms="110049" started-at="2020-03-05T06:41:45Z" finished-at="2020-03-05T06:43:35Z">
+      <class name="datadriven.Datadrv">
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="34593" started-at="2020-03-05T06:41:45Z" data-provider="LoginCredentials" finished-at="2020-03-05T06:42:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc222 -->
-      </class> <!-- sadarpom.Pomrun -->
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="8571" started-at="2020-03-05T06:42:20Z" data-provider="LoginCredentials" finished-at="2020-03-05T06:42:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="39822" started-at="2020-03-05T06:42:29Z" data-provider="LoginCredentials" finished-at="2020-03-05T06:43:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="TC1(java.lang.String, java.lang.String)[pri:0, instance:datadriven.Datadrv@29774679]" name="TC1" duration-ms="27021" started-at="2020-03-05T06:43:08Z" data-provider="LoginCredentials" finished-at="2020-03-05T06:43:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaplanet1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lab1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+      </class> <!-- datadriven.Datadrv -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

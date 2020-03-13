@@ -17,15 +17,15 @@ public class Scrolldown {
 	     JavascriptExecutor js = (JavascriptExecutor) bo;
 		 js.executeScript("window.scrollBy(0,500)");
 		 
-		 //action
+		/* //action
          Actions acr=new Actions(bo);
 			Thread.sleep(6000);
 			acr.sendKeys(Keys.PAGE_DOWN).build().perform();
 			 Thread.sleep(3000);
 			 acr.sendKeys(Keys.PAGE_UP).build().perform();
-			 
+	
 			
-			 acr.sendKeys(Keys.PAGE_UP).build().perform(); 
+			 acr.sendKeys(Keys.PAGE_UP).build().perform(); */
 		 
 	}
 

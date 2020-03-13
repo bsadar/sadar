@@ -9,6 +9,7 @@ public class Googlechrome {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "D:\\SelWD\\Drvers\\chromedriver.exe");
 		WebDriver bo=new ChromeDriver();
+		bo.get("http://apps.qaplanet.in/qahrm/login.php");
 		System.out.println("running with chrome");
 	}
 

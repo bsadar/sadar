@@ -15,13 +15,14 @@ public class Xap {
 		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
 		WebDriver dd=new FirefoxDriver();
 		//dd.manage().window().wait();
-		dd.get("http://apps.qaplanet.in/qahrm/login.php");
+		dd.get("http://apps.qaplanet.in/hrm/login.php");
 		 dd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//dd.findElement(By.name("txtUserName")).sendKeys("sasdar");
 		 // Thread.sleep(3000);
-		 
-		 
-		dd.findElement(By.xpath("//input[text()='txtUserName']")).sendKeys("sadardfdfdf");
+		//tagname[Contains(@attribute name,’Value’)]
+
+		Thread.sleep(3000);
+		dd.findElement(By.xpath("//input[Contains(@name,’txtUserName’)]")).sendKeys("sadardfdfdf");
 		Thread.sleep(3000);
 		//dd.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
        // dd.findElement(By.name("txtPassword")).sendKeys("lab1");

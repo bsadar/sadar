@@ -15,16 +15,14 @@ public class ExcelRead {
 		// TODO Auto-generated method stub
 		FileInputStream file= new FileInputStream ("C:\\Users\\qaplanet\\Desktop\\TestCase.xlsx");
 
+
 		XSSFWorkbook wb=new XSSFWorkbook(file); 
 		XSSFSheet sh = wb.getSheet("Sheet2");
+
+		XSSFRow rw=sh.getRow(4); 
 		
-   
-    	  XSSFRow rw=sh.getRow(5); 
-		XSSFCell cel=rw.getCell(5); 
-		
-		
-		      
-		System.out.println(cel);
+		XSSFCell cel=rw.getCell(2); 
+	   System.out.println(cel);
      
   
 	}

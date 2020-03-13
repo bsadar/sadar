@@ -17,23 +17,23 @@ public class Arralist {
 				
 	//System.out.println(obj);
 		
-	int size=obj.size();
+	/*int size=obj.size();
 	  for (int i=0;i<size;i++){
 		  System.out.println(obj.get(i));
-	  }
+	  }*/
 
 	  
 	  
 	/*for (Object el:obj){
 		 System.out.println(el);
-	}
+	}*/
 	  
 	Iterator it=obj.iterator();
 	while(it.hasNext()){
 		Object el=it.next();
 		System.out.println(el);
 	}
-	*/
+	
 	
 			
 		}

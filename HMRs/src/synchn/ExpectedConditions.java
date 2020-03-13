@@ -24,7 +24,7 @@ public class ExpectedConditions {
 		//Open application
 		Driver.get("http://apps.qaplanet.in/qahrm/login.php");
 		//Verify home page
-		if(wait.until(ExpectedConditions.titleIs("OrangeHRM - New Level of HR Management")))
+		if(wait.until(ExpectedConditions..titleIs("OrangeHRM - New Level of HR Management")))
 		{
 			System.out.println("Home Page displayed");
 		}

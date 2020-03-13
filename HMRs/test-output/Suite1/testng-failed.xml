@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
-  <test thread-count="5" name="Test2(failed)" parallel="tests">
-    <parameter name="browser" value="gg"/>
+  <test thread-count="5" name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="FIREfox"/>
     <classes>
-      <class name="cross.Cr">
+      <class name="testng.FrameworkwithbatchrunbeforeMethod">
         <methods>
-          <include name="CrB" invocation-numbers="0"/>
+          <include name="buildClose"/>
+          <include name="TC4"/>
+          <include name="TC2_3"/>
+          <include name="TC2_2"/>
+          <include name="TC2_4"/>
+          <include name="TC2_1"/>
+          <include name="TC3"/>
+          <include name="CrB"/>
         </methods>
-      </class> <!-- cross.Cr -->
+      </class> <!-- testng.FrameworkwithbatchrunbeforeMethod -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

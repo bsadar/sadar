@@ -17,7 +17,7 @@ public class Whandle {
 		WebDriver  bo= new FirefoxDriver();
 		bo.get("https://chandanachaitanya.github.io/selenium-practice-site");
         // Get current window handle
-        String parentWinHandle = bo.getWindowHandle();
+         String parentWinHandle = bo.getWindowHandle();
          System.out.println("Parent window handle: " + parentWinHandle);
         // Locate 'Click to open a new browser window!' button using id
        WebElement newWindowBtn = bo.findElement(By.id("win1"));

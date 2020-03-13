@@ -26,7 +26,7 @@ public class Read {
     {
 		XSSFRow rw=sh.getRow(i); 
 	
-		XSSFCell cel=rw.getCell(6);
+		XSSFCell cel=rw.getCell(2);
 		
 		
 	   System.out.println(cel);

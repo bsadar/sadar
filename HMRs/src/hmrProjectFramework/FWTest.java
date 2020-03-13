@@ -18,10 +18,10 @@ public class FWTest {
 	  bo.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
 	    bo.findElement(By.name("txtPassword")).sendKeys("lab1");
 	   bo.findElement(By.name("Submit")).click();
-	   Assert.assertEquals(bo.getTitle(), "saOrangeHRM");
+	   Assert.assertEquals(bo.getTitle(), "aOrangeHRM");
   }
   
-  @Test(enabled=true,priority=2,groups="admin")
+  @Test(enabled=true,priority=2,groups="Login")
   
   public void TC_0002_2() {
 	  bo.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
@@ -36,8 +36,9 @@ public class FWTest {
 	  bo.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
 	    bo.findElement(By.name("txtPassword")).sendKeys("lab1");
 	   bo.findElement(By.name("Submit")).click();
-	   bo.findElement(By.linkText("Logout")).click();
-	  Assert.assertEquals(bo.getTitle(),"OrangeHRM - New Level of HR Management");
+	   bo.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
+	  Assert.assertEquals(bo.getTitle(),"OrangeHRM");
+	  bo.close();
 	 }
   
   

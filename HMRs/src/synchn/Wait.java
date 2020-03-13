@@ -22,7 +22,7 @@ public class Wait {
 		Actions Act=new Actions(Driver);
 		//--------------------------------------------
 		//Open application
-		Driver.get("http://apps.qaplanet.in/qahrm/login.php");
+		Driver.get("http://apps.qaplanet.in/hrm/login.php");
 		//Verify home page
 		if(wait.until(ExpectedConditions.titleIs("OrangeHRM - New Level of HR Management")))
 		{

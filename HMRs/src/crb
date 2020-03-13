@@ -5,23 +5,14 @@
   
   <test name="Test1">
  
- <parameter name="browser" value = "ff" />   
+ <parameter name="browser" value = "FIREfox" />   
     <classes>
         <class name="cross.Cr"/>
-        
+         
     </classes>
     
   </test>
   
   
-  <test name="Test2">
  
- <parameter name="browser" value = "gg" />   
-    <classes>
-        <class name="cross.Cr"/>
-        
-    </classes>
-    
-  </test>
-  
    </suite> <!-- Suite -->

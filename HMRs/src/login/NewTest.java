@@ -21,7 +21,7 @@ public class NewTest {
   
   @Test
   public void TC2_2() {
-	  dd.get("http://apps.qaplanet.in/qahrm/login.php");
+	  dd.get(bpath);
 		dd.findElement(By.xpath("//td[2]/input")).sendKeys("");
       dd.findElement(By.name("txtPassword")).sendKeys("");
       dd.findElement(By.name("Submit")).click();

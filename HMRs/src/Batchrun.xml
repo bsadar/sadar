@@ -2,8 +2,8 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="testng.FW1"/>
-       <class name="testng.FW2"/>
+      <class name="testng.FrameworkSample"/>
+       <class name="testng.FrameworkRegressionTestFinal"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

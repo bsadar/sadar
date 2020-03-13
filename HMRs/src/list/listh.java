@@ -15,18 +15,20 @@ public class listh {
 	    bo.get("https://chandanachaitanya.github.io/selenium-practice-site/");
 		Select lf= new Select(bo.findElement(By.name("languages")));
 		//Thread.sleep(3000);
-		lf.selectByIndex(1);
-		//Thread.sleep(3000);
+		//lf.selectByIndex(1);
+		//lf.selectByVisibleText("C++");
+		lf.selectByValue("C++");
+		/*//Thread.sleep(3000);
 		//lf.selectByIndex(2);
 		//lf.selectByValue("saab");
 		//lf.selectByVisibleText("JavaScript");
 		//Slf.selectByIndex(3);
 		//lf.selectByValue("audi");
-
+*/
 		
 		
 	
-	/*//	Multilist
+	//	Multilist
 		Select ml= new Select(bo.findElement(By.name("selenium_suite")));
 		
 		//ml.selectByIndex(3);
@@ -38,7 +40,7 @@ public class listh {
 		//ml.selectByIndex(3);
 		ml.deselectByIndex(2);
 		//ml.deselectByIndex(3);
-		*/
+		
 		
 	
 		

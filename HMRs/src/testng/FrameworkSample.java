@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class FrameworkSample {
 	WebDriver bo;
-	String buildpath="http://apps.qaplanet.in/qahrm/login.php";
+	String buildpath="http://apps.qaplanet.in/hrm/login.php";
 	   @Test(enabled=true,priority=1,groups="Login") 
 	 //valid&valid
 	  public void TC2_1() {

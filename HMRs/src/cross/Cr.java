@@ -17,7 +17,7 @@ public class Cr {
   @Test
   @Parameters("browser")
   public void CrB(String ibr) {
-	if (ibr.equalsIgnoreCase("ff")){
+	if (ibr.equalsIgnoreCase("FIREFOX")){
 		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
         dd=new FirefoxDriver();
         System.out.println("running with FF");
@@ -30,7 +30,7 @@ public class Cr {
 	}
 	
 	dd.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-	dd.get("http://apps.qaplanet.in/qahrm/login.php");
+	dd.get("http://apps.qaplanet.in/hrm/login.php");
 	dd.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
     dd.findElement(By.name("txtPassword")).sendKeys("lab1");
     dd.findElement(By.name("Submit")).click();

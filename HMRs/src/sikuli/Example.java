@@ -14,7 +14,7 @@ public class Example {
 		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
 		WebDriver bo=new FirefoxDriver();
 		
-		bo.get("http://apps.qaplanet.in/qahrm/login.php");
+		bo.get("http://apps.qaplanet.in/hrm/login.php");
 		bo.manage().window().maximize();
 		
 		Screen sc=new Screen();
@@ -25,6 +25,7 @@ public class Example {
 		sc.type(ud,"qaplanet1");
 		Thread.sleep(3000);
 		sc.type(pd,"lab1");
+	
         Thread.sleep(3000);
 	     sc.click(log);
 	   

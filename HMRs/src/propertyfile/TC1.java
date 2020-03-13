@@ -14,7 +14,7 @@ public class TC1 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Properties obj = new Properties(); 
-		FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"/src/propertyfile/tt.properties");
+		FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"/src/propertyfile/ss.properties");
 		obj.load(objfile);
 		 String bpaths=   obj.getProperty("bpath");
 		String uids= obj.getProperty("uid");
