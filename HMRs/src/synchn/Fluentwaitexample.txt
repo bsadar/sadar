@@ -1,0 +1,41 @@
+package findelmnts;
+
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.ExpectedConditions; 
+import org.openqa.selenium.support.ui.WebDriverWait; 
+
+
+public class Wt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","D:\\Selenium\\browserexe\\chromedriver.exe");
+		WebDriver br=new ChromeDriver();
+		br.get("https://bsadar.github.io/hmrbuild1/Loging.html");
+		br.findElement(By.xpath("//body[1]/center[1]/table[1]/tbody[1]/tr[2]/td[2]/form[1]/input[1]")).sendKeys("sadar");
+		br.findElement(By.xpath("//tbody/tr[3]/td[2]/input[1]")).sendKeys("sadar");
+		br.findElement(By.xpath("//tbody/tr[3]/td[2]/input[1]")).click();
+		  Wait<WebDriver> wait = new FluentWait<WebDriver>(br)                              
+		            .withTimeout(30, TimeUnit.SECONDS)            
+		            .pollingEvery(5, TimeUnit.SECONDS)            
+		            .ignoring(NoSuchElementException.class);  
+		    WebElement stationhalts = wait.until(new   
+		Function<WebDriver, WebElement>(){      
+		        public WebElement apply(WebDriver br ) {  
+		            return   br.findElement(By.xpath("//b[contains(text(),'Station Halts to monitor')]"));  
+		        }  
+		
+		    }	);
+		    stationhalts.click();
+	
+	}
+
+}
