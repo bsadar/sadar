@@ -17,7 +17,7 @@ public class Cr {
   @Test
   @Parameters("browser")
   public void CrB(String ibr) {
-	if (ibr.equalsIgnoreCase("FIREFOX")){
+	if (ibr.equalsIgnoreCase("ff")){
 		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
         dd=new FirefoxDriver();
         System.out.println("running with FF");
