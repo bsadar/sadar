@@ -17,11 +17,11 @@ public class BuildTest {
 		                //reading property file
 				FileInputStream propertyfile = new FileInputStream(System.getProperty("user.dir")+"/src/propertyfile/locatorvalues.properties");
 				
-				//creating propertyoject  for property class loading prperty file
+				//creating propertyoject  for property class & loading prperty file
 				Properties propertyoject = new Properties(); 
 				propertyoject.load(propertyfile);
 				
-				//scripting
+				//scripting with property file variable
 				System.setProperty("webdriver.chrome.driver","D:\\Selenium\\browserexe\\chorme107\\chromedriver.exe");
 				WebDriver bo=new ChromeDriver();
 				bo.get(propertyoject.getProperty("bpath"));
