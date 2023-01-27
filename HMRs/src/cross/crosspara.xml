@@ -2,21 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestSuite" thread-count="2" parallel="tests" >
 
-<test name="Chrome">
-<parameter name="browser" value="ff" />
-<classes>
-<class name="cross.Cr">
-</class>
-</classes>
-</test>
+ <test thread-count="5" name="Testingon fire fox">
+  <parameter name="browser" value="firefox" />
+   <parameter name="url" value="https://bsadar.github.io/hmrbuild1/Loging.html" />
+  
+    <classes>
+     <class name="cross.Cr">
+    </classes>
+  </test> <!-- Test -->
 
-<test name="Fire">
-<parameter name="browser" value="gg" />
-<classes>
-<class name="cross.Cr">
-</class>
-</classes>
-</test>
+ <test thread-count="5" name="Testingon fire fox">
+  <parameter name="browser" value="googlechrome" />
+   <parameter name="url" value="https://bsadar.github.io/hmrbuild1/Loging.html" />
+    
+    <classes>
+     <class name="cross.Cr">
+    </classes>
+  </test> <!-- Test -->
 
 
 
