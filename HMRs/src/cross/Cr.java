@@ -12,28 +12,28 @@ import org.testng.annotations.AfterMethod;
 
 public class Cr {
 
-	WebDriver br;
+		WebDriver bo;
   
 	
-   //open browser firefox and Chrome as of xml vraible values	
-   @Parameters({"browser","url"})
-   @BeforeMethod
-  public void be(String ibr,String bp) {
+ // getting vraible values from xml file	
+  @Parameters({"boowser","url"})	
+  @BeforeMethod
+  public void be(String ibo,String bp) {
 	  
-	  if (ibr.equalsIgnoreCase("firfox")){
-		  System.setProperty("webdriver.gecko.driver","C:\\Users\\lenovo\\git\\rrr\\sadarclass\\src\\brosers\\geckodriver.exe");
-	        br=new FirefoxDriver();
+	  if (ibo.equalsIgnoreCase("firefox")){
+		  System.setProperty("webdriver.gecko.driver","C:\\Users\\lenovo\\git\\rrr\\sadarclass\\src\\boosers\\geckodriver.exe");
+	        bo=new FirefoxDriver();
 	        
 	        System.out.println("running with firfox");
-	        br.get(bp);
+	        bo.get(bp);
 	      
 		}
-		else if(ibr.equalsIgnoreCase("googlechrome"))
+		else if(ibo.equalsIgnoreCase("googlechrome"))
 		{
-			 System.setProperty("webdriver.chrome.driver","D:\\Selenium\\browserexe\\chorme107\\chromedriver.exe");
-			br=new ChromeDriver();
+			 System.setProperty("webdriver.chrome.driver","D:\\Selenium\\boowserexe\\chorme107\\chromedriver.exe");
+			bo=new ChromeDriver();
 			System.out.println("running with chrome");
-			br.get(bp);
+			bo.get(bp);
 			
 		}
 	  
@@ -42,17 +42,17 @@ public class Cr {
 //browser close
   @AfterMethod
   public void bc() {
-	  br.quit();
+	  bo.quit();
   }
-  
-  //testcases scripts
+	
+  //testcase scripts
   @Test(enabled=true,priority=1,groups="login")
   public void testcase1() throws InterruptedException {
-	    br.findElement(By.xpath("//input[contains(@name,'id')]")).sendKeys("sadar");
-		br.findElement(By.xpath("//input[@name='pass']")).sendKeys("sadar");
+	    bo.findElement(By.xpath("//input[contains(@name,'id')]")).sendKeys("sadar");
+		bo.findElement(By.xpath("//input[@name='pass']")).sendKeys("sadar");
 		   Thread.sleep(3000);
-		br.findElement(By.xpath("//input[contains(@value,'Login')]")).click();
-		String ar=br.getTitle();
+		bo.findElement(By.xpath("//input[contains(@value,'Login')]")).click();
+		String ar=bo.getTitle();
 		String er="MainHMR";
 		Assert.assertEquals(er,ar);
 	  
