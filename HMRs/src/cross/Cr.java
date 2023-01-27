@@ -1,46 +1,61 @@
 package cross;
 
-import java.util.concurrent.TimeUnit;
-
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
 
 public class Cr {
-	
-	WebDriver dd;
-  @Test
-  @Parameters("browser")
-  public void CrB(String ibr) {
-	if (ibr.equalsIgnoreCase("FIREFOX")){
-		System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
-        dd=new FirefoxDriver();
-        System.out.println("running with FF");
-	}
-	else if(ibr.equalsIgnoreCase("gg"))
-	{
-		System.setProperty("webdriver.chrome.driver", "D:\\SelWD\\Drvers\\chromedriver.exe");
-		dd=new ChromeDriver();
-		System.out.println("running with chrome");
-	}
-	
-	dd.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-	dd.get("http://apps.qaplanet.in/hrm/login.php");
-	dd.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
-    dd.findElement(By.name("txtPassword")).sendKeys("lab1");
-    dd.findElement(By.name("Submit")).click();
-    
- 
-    
-    Assert.assertEquals(dd.getTitle(), "OrangeHRM");
-    
-    
+
+	WebDriver br;
   
-	dd.close();
+	
+   //open browser firefox and Chrome as of xml vraible values	
+   @Parameters({"browser","url"})
+   @BeforeMethod
+  public void be(String ibr,String bp) {
+	  
+	  if (ibr.equalsIgnoreCase("firfox")){
+		  System.setProperty("webdriver.gecko.driver","C:\\Users\\lenovo\\git\\rrr\\sadarclass\\src\\brosers\\geckodriver.exe");
+	        br=new FirefoxDriver();
+	        
+	        System.out.println("running with firfox");
+	        br.get(bp);
+	      
+		}
+		else if(ibr.equalsIgnoreCase("googlechrome"))
+		{
+			 System.setProperty("webdriver.chrome.driver","D:\\Selenium\\browserexe\\chorme107\\chromedriver.exe");
+			br=new ChromeDriver();
+			System.out.println("running with chrome");
+			br.get(bp);
+			
+		}
+	  
+	  
   }
+//browser close
+  @AfterMethod
+  public void bc() {
+	  br.quit();
+  }
+  
+  //testcases scripts
+  @Test(enabled=true,priority=1,groups="login")
+  public void testcase1() throws InterruptedException {
+	    br.findElement(By.xpath("//input[contains(@name,'id')]")).sendKeys("sadar");
+		br.findElement(By.xpath("//input[@name='pass']")).sendKeys("sadar");
+		   Thread.sleep(3000);
+		br.findElement(By.xpath("//input[contains(@value,'Login')]")).click();
+		String ar=br.getTitle();
+		String er="MainHMR";
+		Assert.assertEquals(er,ar);
+	  
+  }
+  
 }
