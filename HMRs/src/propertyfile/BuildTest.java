@@ -13,15 +13,16 @@ public class BuildTest {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		
+		FileInputStream propertyfile = new FileInputStream(System.getProperty("user.dir")+"/src/property/locatorvalues.properties");
+		
 		Properties obj = new Properties(); 
-		FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"/src/propertyfile/locatorvalues.properties");
-		obj.load(objfile);
-		 String bp = obj.getProperty("bpath");
-		           
-	      System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
-			WebDriver bo=new FirefoxDriver();
-			bo.get(bp);
-			bo.findElement(By.xpath(obj.getProperty("uid"))).sendKeys("qaplanet1");
+		obj.load(propertyfile);
+		System.setProperty("webdriver.chrome.driver","D:\\Selenium\\browserexe\\chorme107\\chromedriver.exe");
+		
+		WebDriver bo=new ChromeDriver();
+		bo.get(obj.getProperty("bpath"));
+		bo.findElement(By.xpath(obj.getProperty("uidl"))).sendKeys("sadar");
 	}
 
 }
