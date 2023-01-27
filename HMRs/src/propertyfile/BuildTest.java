@@ -25,7 +25,7 @@ public class BuildTest {
 				System.setProperty("webdriver.chrome.driver","D:\\Selenium\\browserexe\\chorme107\\chromedriver.exe");
 				WebDriver bo=new ChromeDriver();
 				bo.get(propertyoject.getProperty("bpath"));
-				bo.findElement(By.xpath(propertyoject.getProperty("uidl"))).sendKeys("sadar");
+				bo.findElement(By.xpath(propertyoject.getProperty("uidl"))).sendKeys(propertyoject.getProperty("uidv"));
 	}
 
 }
