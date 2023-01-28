@@ -59,11 +59,11 @@ public class DatadrivenwithExcel {
 		      bo.findElement(By.xpath("//td[1]//center[1]//input[1]")).click();
 			  
 			//compare expected and actual result  
-		     if(bo.getTitle().equals(bo.getTitle())){
-		  	   System.out.print("passs");
+		     if(bo.getTitle().equals("MainHMR")){
+		  	   System.out.println("passs");
 		     }
 		     else{
-		  	   System.out.print("fail");
+		  	   System.out.println("fail");
 		     }
 		     bo.close();
 		
