@@ -11,7 +11,7 @@
     </classes>
   </test> <!-- Test -->
 
- <test thread-count="5" name="Testingon fire fox">
+ <test thread-count="5" name="Testingon chrome">
   <parameter name="browser" value="googlechrome" />
    <parameter name="url" value="https://bsadar.github.io/hmrbuild1/Loging.html" />
     
