@@ -16,7 +16,7 @@ public class Cr {
   
 	
  // getting vraible values from xml file	
-  @Parameters({"boowser","url"})	
+  @Parameters({"browser","url"})	
   @BeforeMethod
   public void be(String ibo,String bp) {
 	  
