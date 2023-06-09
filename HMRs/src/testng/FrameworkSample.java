@@ -9,14 +9,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class FrameworkSample {
+	//Declaring browser object
 	WebDriver bo;
+	//intitializing build url
 	String buildpath="http://apps.qaplanet.in/hrm/login.php";
 	  //browser opening
 	  @BeforeMethod
 	  void buildExecution(){
-		  System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
+		     System.setProperty("webdriver.gecko.driver", "D:\\SelWD\\Drvers\\geckodriver.exe");
+		     //opening chrome browser
 		     bo=new FirefoxDriver();
-			bo.get(buildpath);
+		     bo.get(buildpath);
 	  }
 	//browser close
 	  @AfterMethod
@@ -26,11 +29,19 @@ public class FrameworkSample {
 	
 	 //valid test case
 	  @Test(enabled=true,priority=1,groups="Login") 
-	  public void TC2_1() {
+	  public void Testcase1() {
+		  //Enter valid userid
 		bo.findElement(By.xpath("//td[2]/input")).sendKeys("qaplanet1");
+		  //enter valid password
 	         bo.findElement(By.name("txtPassword")).sendKeys("lab1");
+		 // click on login button
 	        bo.findElement(By.name("Submit")).click();
-	         Assert.assertEquals(bo.getTitle(), "OrangeHRM");     
+		  //actual result
+		 String ActualResult= bo.getTitle();
+		  //expected result
+		String  ExpectedResult= "OrangeHRM";
+		  //matching actual result and expected result
+	         Assert.assertEquals(ActualResult,ExpectedResult);     
 	  }
 	  
 }
