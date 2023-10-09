@@ -15,21 +15,31 @@ public class Read {
 
 	public static void main(String[] args) throws IOException   {
 		// TODO Auto-generated method stub
-		FileInputStream file= new FileInputStream ("C:\\Users\\qaplanet\\Desktop\\TestCase.xlsx");
+		FileInputStream file= new FileInputStream ("C:\\Users\\qaplanet\\Desktop\\datadriventestingData.xlsx");
 
 		XSSFWorkbook wb=new XSSFWorkbook(file); 
-		XSSFSheet sh = wb.getSheet("Sheet2");
+		XSSFSheet sh = wb.getSheet("inputdata");
 		int rc=sh.getLastRowNum()-sh.getFirstRowNum();
 		System.out.println(rc);
 		
-  for(int i=0;i<=rc;i++)
+  for(int i=1;i<=rc;i++)
     {
+	        //accessing row
 		XSSFRow rw=sh.getRow(i); 
-	
-		XSSFCell cel=rw.getCell(2);
+
+	    //getting 2and column value
+		XSSFCell ud=rw.getCell(1);
+	        System.out.println(ud);
+	   
+	    //getting 3rd column value
+	       XSSFCell pd=rw.getCell(2);
+	       System.out.println(pd);
+	   
+	    //converting into string format to use in test case
+	    String uds=ud.toString();
+	    String pds=pd.toString();
 		
-		
-	   System.out.println(cel);
+	 
   }
 	}
 
