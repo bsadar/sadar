@@ -33,16 +33,18 @@ public class DatadrivenwithExcel {
 		    {
 			        // get row in sheet
 				XSSFRow rw=sh.getRow(i); 
-			        // get cell1  in row
-				String uid=rw.getCell(1).toString(); 
-			         // get cell2 in row
-				String pd=rw.getCell(2).toString();
-				             
-				 // print row number      
-				 System.out.println(i);
-			   //print userid and password values of excel file
-			   System.out.println(uid);
-			  System.out.println(pd);
+			    
+			    //getting 2and column value
+		                XSSFCell ud=rw.getCell(1);
+	                        System.out.println(ud);
+	   
+	                    //getting 3rd column value
+	                       XSSFCell pd=rw.getCell(2);
+	                       System.out.println(pd);
+	   
+	                   //converting into string format to use in test case
+	                       String uds=ud.toString();
+	                       String pds=pd.toString();
 			
 			  //test case scripting for datadriven testing 
 			  
@@ -52,9 +54,9 @@ public class DatadrivenwithExcel {
 			  //Enter URL in browser address
 				bo.get("https://bsadar.github.io/hmrbuild1/Loging.html");
 			  //Enter user id in userid text field
-				bo.findElement(By.xpath("//input[@name='id']")).sendKeys(uid);
+				bo.findElement(By.xpath("//input[@name='id']")).sendKeys(uds);
 			  //Enter password in password text field
-		      bo.findElement(By.xpath("//input[@name='pass']")).sendKeys(pd);
+		      bo.findElement(By.xpath("//input[@name='pass']")).sendKeys(pds);
 		      //click on login button
 		      bo.findElement(By.xpath("//td[1]//center[1]//input[1]")).click();
 			  
