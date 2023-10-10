@@ -15,10 +15,13 @@ public class Read {
 
 	public static void main(String[] args) throws IOException   {
 		// TODO Auto-generated method stub
+		//read file object
 		FileInputStream file= new FileInputStream ("C:\\Users\\qaplanet\\Desktop\\datadriventestingData.xlsx");
-
+               //workbook object
 		XSSFWorkbook wb=new XSSFWorkbook(file); 
+		//geting sheet
 		XSSFSheet sh = wb.getSheet("inputdata");
+		// counting number of rows
 		int rc=sh.getLastRowNum()-sh.getFirstRowNum();
 		System.out.println(rc);
 		
