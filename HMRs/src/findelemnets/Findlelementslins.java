@@ -17,10 +17,17 @@ public class Findlelementslins {
 		//dd.get("https://chandanachaitanya.github.io/selenium-practice-site/");
 		List<WebElement> nl=dd.findElements(By.tagName("a"));
 		System.out.print(nl.size());
+		// 1.print links
 		for(int i=0; i<=nl.size();i++ ) 
 				{
 			
 			System.out.println(nl.get(i).getText());
+			}
+        // 2.print links
+		for(WebElement lname:nl ) 
+				{
+			
+			System.out.println(lname.getText());
 			}
 	}
 
