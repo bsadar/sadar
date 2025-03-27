@@ -19,18 +19,18 @@ public class BuildTest {
 				//Or
                                 //FileInputStream propertyfile = new FileInputStream(System.getProperty("user.dir")+"/src/propertyfile/locatorvalues.properties");
 				
-		        	//creating propertyoject  for property class & loading prperty file
-				Properties propertyoject = new Properties(); 
-				propertyoject.load(propertyfile);
+		        	//creating propertyobject  for property class & loading prperty file
+				Properties propertyobject = new Properties(); 
+				propertyobject.load(propertyfile);
 				
 				//opening chrome browser
 				System.setProperty("webdriver.chrome.driver","D:\\Selenium\\browserexe\\chorme107\\chromedriver.exe"); 
 				WebDriver bo=new ChromeDriver();
 		
 		                //scripting with property file variable reading
-				bo.get(propertyoject.getProperty("bpath"));
+				bo.get(propertyobject.getProperty("bpath"));
 		                //entering userid text field 
-				bo.findElement(By.xpath(propertyoject.getProperty("uidl"))).sendKeys(propertyoject.getProperty("uidv"));
+				bo.findElement(By.xpath(propertyobject.getProperty("uidl"))).sendKeys(propertyoject.getProperty("uidv"));
 	}
 
 }
