@@ -34,7 +34,7 @@ public class Sync {
 	    
 	    // 1.verify user id text field
 	    
-	    WebElement ud=   wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
+	    WebElement ud=   wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='id']")));
 	    if(ud.isDisplayed()) {
 	    	System.out.println("ud displayed :pass");
 	    }
